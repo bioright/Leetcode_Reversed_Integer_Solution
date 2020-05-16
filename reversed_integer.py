@@ -1,6 +1,6 @@
 #Given a 32-bit signed integer, reverse digits of an integer.
 
-def reverse():                                         #define a function that takes an integer as an argument.
+def reverse():                                        
     x = int(input("Enter a number to reverse "))
     if x < 0:                                           #handle the case for a negative integer
         x = int("-" + str(abs(x))[::-1].lstrip("0"))    #converting the int into a str for slicing, then back to int
